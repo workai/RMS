@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C7B684A6-2F9D-401F-97DA-1A65D9A421C9}</ProjectGuid>
+    <RootNamespace>ReformMediaServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Dynamic</UseOfAtl>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Winmm.lib;User32.lib;dhnetsdk.lib;HCNetSDK.lib;Http.lib;sqlite3.lib;dhplay.lib;PlayCtrl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>D:\Work\流媒体\流媒体\源码\device\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Ws2_32.lib;Winmm.lib;User32.lib;dhnetsdk.lib;HCNetSDK.lib;Http.lib;sqlite3.lib;dhplay.lib;PlayCtrl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\async_socket_client.cpp" />
+    <ClCompile Include="..\CBufferCmd.cpp" />
+    <ClCompile Include="..\CGetPicture.cpp" />
+    <ClCompile Include="..\CGetPictureDH.cpp" />
+    <ClCompile Include="..\Channel.cpp" />
+    <ClCompile Include="..\CLock.cpp" />
+    <ClCompile Include="..\Config.cpp" />
+    <ClCompile Include="..\CppSQLite3.cpp" />
+    <ClCompile Include="..\DaHuaDVR.cpp" />
+    <ClCompile Include="..\DBObject.cpp" />
+    <ClCompile Include="..\DHDVRChannel.cpp" />
+    <ClCompile Include="..\DOMDocument.cpp" />
+    <ClCompile Include="..\DOMElement.cpp" />
+    <ClCompile Include="..\DVR.cpp" />
+    <ClCompile Include="..\FileIndex.cpp" />
+    <ClCompile Include="..\getopt.c" />
+    <ClCompile Include="..\HikNetDVR.cpp" />
+    <ClCompile Include="..\HikNetDVRChannel.cpp" />
+    <ClCompile Include="..\ManageVedioFiles.cpp" />
+    <ClCompile Include="..\MediaServer.cpp" />
+    <ClCompile Include="..\ManagerConnect.cpp" />
+    <ClCompile Include="..\ManagerDvr.cpp" />
+    <ClCompile Include="..\ManagerRtsp.cpp" />
+    <ClCompile Include="..\MultiCastVideoTrans.cpp" />
+    <ClCompile Include="..\Packet.cpp" />
+    <ClCompile Include="..\PushServer.cpp" />
+    <ClCompile Include="..\ReformMediaServerDef.CPP" />
+    <ClCompile Include="..\Log.cpp" />
+    <ClCompile Include="..\ReformMediaServer.cpp" />
+    <ClCompile Include="..\ServerSocket.cpp" />
+    <ClCompile Include="..\strutil.cpp" />
+    <ClCompile Include="..\SysInfo.cpp" />
+    <ClCompile Include="..\VideoSend.cpp" />
+    <ClCompile Include="..\VideoTrans.cpp" />
+    <ClCompile Include="..\xml\tinystr.cpp" />
+    <ClCompile Include="..\xml\tinyxml.cpp" />
+    <ClCompile Include="..\xml\tinyxmlerror.cpp" />
+    <ClCompile Include="..\xml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\async_socket_client.h" />
+    <ClInclude Include="..\CBufferCmd.h" />
+    <ClInclude Include="..\CGetPicture.h" />
+    <ClInclude Include="..\Channel.h" />
+    <ClInclude Include="..\CLock.h" />
+    <ClInclude Include="..\Config.h" />
+    <ClInclude Include="..\CppSQLite3.h" />
+    <ClInclude Include="..\DaHuaDVR.h" />
+    <ClInclude Include="..\DBObject.h" />
+    <ClInclude Include="..\DHDVRChannel.h" />
+    <ClInclude Include="..\dhnetsdk.h" />
+    <ClInclude Include="..\dhplay.h" />
+    <ClInclude Include="..\DOMDocument.h" />
+    <ClInclude Include="..\DOMElement.h" />
+    <ClInclude Include="..\DVR.h" />
+    <ClInclude Include="..\FileIndex.h" />
+    <ClInclude Include="..\getopt.h" />
+    <ClInclude Include="..\HCNetSDK.h" />
+    <ClInclude Include="..\HikNetDVR.h" />
+    <ClInclude Include="..\HikNetDVRChannel.h" />
+    <ClInclude Include="..\ManageVedioFiles.h" />
+    <ClInclude Include="..\MediaServer.h" />
+    <ClInclude Include="..\ManagerConnect.h" />
+    <ClInclude Include="..\ManagerDvr.h" />
+    <ClInclude Include="..\ManagerRtsp.h" />
+    <ClInclude Include="..\media_protocal.h" />
+    <ClInclude Include="..\MultiCastVideoTrans.h" />
+    <ClInclude Include="..\Packet.h" />
+    <ClInclude Include="..\PushServer.h" />
+    <ClInclude Include="..\queuelist.h" />
+    <ClInclude Include="..\qutil.h" />
+    <ClInclude Include="..\ReformMediaServerDef.H" />
+    <ClInclude Include="..\Log.h" />
+    <ClInclude Include="..\ReformMediaServer.h" />
+    <ClInclude Include="..\RFProtocol.h" />
+    <ClInclude Include="..\ServerSocket.h" />
+    <ClInclude Include="..\sqlite3.h" />
+    <ClInclude Include="..\StdHeader.h" />
+    <ClInclude Include="..\strutil.h" />
+    <ClInclude Include="..\SysInfo.h" />
+    <ClInclude Include="..\VideoSend.h" />
+    <ClInclude Include="..\VideoTrans.h" />
+    <ClInclude Include="..\xml\tinystr.h" />
+    <ClInclude Include="..\xml\tinyxml.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CameraCfg.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RecordCfg.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="rfserv.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ReformMediaServer.rc" />
+  </ItemGroup>
+    <ItemGroup>
+    <CustomBuild Include=".">
+      <FileType>Document</FileType>
+      <Command>
+        call call xcopy /efy "FileServer.ini" "$(OutDir)"
+        call call xcopy /efy "CameraCfg.xml" "$(OutDir)"
+if %errorlevel% neq 0 exit /b %errorlevel%
+call call xcopy /efy "..\lib\*.dll" "$(OutDir)"
+if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>copy_libraries</Message>
+      <Outputs>$(OutDir)\copy_resources.stamp;$(OutDir)\copy_executables.stamp;$(OutDir)\copy_libraries.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

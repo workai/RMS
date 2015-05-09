@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DVR">
+      <UniqueIdentifier>{05054861-5d30-403f-87c2-37f10a1b584d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{e15b8473-2d01-48cf-8df3-92f0c5e70928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Public">
+      <UniqueIdentifier>{5daabbb2-1f53-44f9-88ef-b580f9f3becf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{281402d8-d22a-44af-81fd-eaa0dc61d006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{604ad6a0-8003-49a7-9d7d-3c551b6ec882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{48d00fbb-ba24-4731-9ee4-d4a4f7b66e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{e0bd495c-c0c2-4ce2-b190-71f3cb422edd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{bfd6f37b-4499-4caf-8f5b-9c68e362de6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\ReformMediaServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ManagerRtsp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ManagerDvr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DVR.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DaHuaDVR.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Log.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Packet.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SysInfo.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FileIndex.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Channel.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DHDVRChannel.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ReformMediaServerDef.CPP">
+      <Filter>Define</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DOMElement.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DOMDocument.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VideoSend.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\VideoTrans.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MultiCastVideoTrans.cpp">
+      <Filter>Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CppSQLite3.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DBObject.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\strutil.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MediaServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ServerSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HikNetDVR.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HikNetDVRChannel.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xml\tinystr.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xml\tinyxml.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xml\tinyxmlerror.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\xml\tinyxmlparser.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Config.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\async_socket_client.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\getopt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CLock.cpp">
+      <Filter>Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CBufferCmd.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ManagerConnect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ManageVedioFiles.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGetPicture.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CGetPictureDH.cpp">
+      <Filter>DVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\PushServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ReformMediaServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ManagerRtsp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ManagerDvr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DVR.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DaHuaDVR.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dhnetsdk.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DOMElement.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DOMDocument.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Packet.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Log.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DHDVRChannel.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Channel.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FileIndex.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SysInfo.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ReformMediaServerDef.H">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\StdHeader.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MultiCastVideoTrans.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VideoSend.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\VideoTrans.h">
+      <Filter>Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CppSQLite3.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sqlite3.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DBObject.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\strutil.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MediaServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\queuelist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\qutil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ServerSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\RFProtocol.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HCNetSDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HikNetDVR.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HikNetDVRChannel.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xml\tinystr.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\xml\tinyxml.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Config.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dhplay.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\media_protocal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\async_socket_client.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\getopt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CLock.h">
+      <Filter>Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CBufferCmd.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ManagerConnect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ManageVedioFiles.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\CGetPicture.h">
+      <Filter>DVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PushServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CameraCfg.xml">
+      <Filter>Settings</Filter>
+    </None>
+    <None Include="rfserv.db">
+      <Filter>Settings</Filter>
+    </None>
+    <None Include="RecordCfg.xml">
+      <Filter>Settings</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ReformMediaServer.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

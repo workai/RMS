@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="gb2312"?>
+<所有摄像头 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.gentek.com">
+	<Domains>
+		<Domain>
+			<strDomainName>text</strDomainName>
+			<strDomainDesc>test</strDomainDesc>
+			<RecordPath>D:\record;E:\SSData</RecordPath>
+			<Cameras>
+
+
+	<Camera>
+          <strCameraID>01</strCameraID>
+          <eCameraType>SD</eCameraType>
+          <strName>first</strName>
+          <strModel>DVR</strModel>
+          <strProvider>海康</strProvider>
+          <strCodec>H264</strCodec>
+          <strLogin>admin</strLogin>
+          <strPassword>12345</strPassword>
+          <strIP>192.168.1.191</strIP>
+          <strPort>8000</strPort>
+          <strCnlID>1</strCnlID>
+          <boolMultiCast>false</boolMultiCast>
+          <strMultiCastAddress>233.0.0.5</strMultiCastAddress>
+          <strMultiCastPort>5152</strMultiCastPort>
+          <eRecordType>RECORD</eRecordType>
+        </Camera>
+             </Cameras>
+		</Domain>
+	</Domains>
+</所有摄像头>
